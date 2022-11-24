@@ -24,7 +24,7 @@ def show_info():
     else:
         return standings
 
-@app.route('/',methods = ['POST','GET'])
+@app.route('/basic-info',methods = ['POST','GET'])
 def show_info():
     if request.method == 'GET':
         return [btc_price,btc_balance,usdt_balance]
